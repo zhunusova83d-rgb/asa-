@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>404 — Страница не найдена | MYSTERY HISTORY</title>
+
+    <meta name="description" content="Страница не найдена. Вернитесь к исследованию загадок древнего мира.">
+    <meta name="author" content="Асанали Куандыков">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#10100f">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        .error-page {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+
+            background:
+                linear-gradient(
+                    rgba(16,16,15,0.85),
+                    rgba(16,16,15,0.95)
+                ),
+                url("images/optimized/pyramids.webp") center/cover;
+        }
+
+        .error-content {
+            max-width: 650px;
+        }
+
+        .error-content h1 {
+            font-size: clamp(110px, 20vw, 200px);
+            line-height: 1;
+            color: var(--gold);
+            text-shadow: 0 0 35px rgba(201,164,92,0.3);
+        }
+
+        .error-content h2 {
+            font-size: 32px;
+            margin: 20px 0;
+        }
+
+        .error-content p {
+            color: var(--muted);
+            margin-bottom: 30px;
+        }
+
+        .error-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 35px;
+            flex-wrap: wrap;
+        }
+
+        .error-links a {
+            color: var(--gold);
+            transition: 0.3s;
+        }
+
+        .error-links a:hover {
+            color: var(--gold-light);
+        }
+
+        @media (max-width: 550px) {
+
+            .error-content h2 {
+                font-size: 24px;
+            }
+
+            .error-links {
+                gap: 15px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        MYSTERY<span>HISTORY</span>
+    </a>
+
+    <nav class="navigation">
+
+        <a href="index.html">Главная</a>
+
+        <a href="gallery.html">Галерея</a>
+
+        <a href="form.html">Анкета</a>
+
+    </nav>
+
+</header>
+
+<main class="error-page">
+
+    <div class="error-content">
+
+        <p class="subtitle">
+            ТАЙНА НЕ НАЙДЕНА
+        </p>
+
+        <h1>404</h1>
+
+        <h2>Страница не найдена</h2>
+
+        <p>
+            Кажется, ты заблудился во времени.
+            Эта страница исчезла, словно древняя цивилизация.
+            Но не волнуйся — путь назад ещё существует.
+        </p>
+
+        <a href="index.html" class="main-button">
+            Вернуться на главную
+        </a>
+
+        <div class="error-links">
+
+            <a href="index.html">Главная</a>
+
+            <a href="gallery.html">Галерея</a>
+
+            <a href="form.html">Анкета</a>
+
+        </div>
+
+    </div>
+
+</main>
+
+<footer class="footer">
+
+    <p>© 2026 MYSTERY HISTORY. Тайны прошлого.</p>
+
+</footer>
+
+</body>
+</html>

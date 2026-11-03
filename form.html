@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Анкета — MYSTERY HISTORY</title>
+    <meta name="description" content="Заполните историческую анкету: расскажите о любимой эпохе, цивилизации и загадке прошлого, которая интересует вас больше всего, и создайте аккаунт.">
+    <meta name="keywords" content="анкета, регистрация, история, древние цивилизации, исторические эпохи, Египет, Рим, Майя">
+    <meta name="author" content="Асанали Куандыков">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#101820">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Анкета — MYSTERY HISTORY">
+    <meta property="og:description" content="Расскажите о своих интересах, любимых исторических эпохах и древних цивилизациях.">
+    <meta property="og:image" content="https://USERNAME.github.io/REPOSITORY/images/form-preview.jpg">
+    <meta property="og:url" content="https://USERNAME.github.io/REPOSITORY/form.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MYSTERY HISTORY">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Историческая анкета MYSTERY HISTORY">
+    <meta property="og:image:type" content="image/jpeg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Анкета — MYSTERY HISTORY">
+    <meta name="twitter:description" content="Расскажите о своих интересах и любимых исторических эпохах.">
+    <meta name="twitter:image" content="https://USERNAME.github.io/REPOSITORY/images/form-preview.jpg">
+    <meta name="twitter:image:alt" content="Историческая анкета MYSTERY HISTORY">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://USERNAME.github.io/REPOSITORY/form.html">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">MYSTERY<span>HISTORY</span></a>
+    <nav class="navigation">
+        <a href="index.html">Главная</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="form.html" class="active">Анкета</a>
+    </nav>
+</header>
+
+<main class="page-container">
+    <div class="section-heading">
+        <p class="subtitle">СТАНЬ ЧАСТЬЮ ИСТОРИИ</p>
+        <h1>Регистрация и анкета</h1>
+        <p>Расскажи немного о себе и своих интересах.</p>
+    </div>
+
+    <form id="registration" class="form-card" novalidate>
+        <h2>Создание аккаунта</h2>
+
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="name">Имя *</label>
+                <input type="text" id="name" placeholder="Введите имя" required>
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="surname">Фамилия *</label>
+                <input type="text" id="surname" placeholder="Введите фамилию" required>
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Электронная почта *</label>
+                <input type="email" id="email" placeholder="example@mail.com" required>
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" placeholder="+7 777 123 45 67">
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Пароль *</label>
+                <input type="password" id="password" placeholder="Минимум 8 символов" required>
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Повторите пароль *</label>
+                <input type="password" id="confirmPassword" placeholder="Повторите пароль" required>
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="birthdate">Дата рождения *</label>
+                <input type="date" id="birthdate" required>
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group full-width">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="agreement" required>
+                    Я согласен на обработку введённых данных *
+                </label>
+                <small class="error"></small>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <h2>Историческая анкета</h2>
+
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="era">Любимая эпоха *</label>
+                <select id="era" required>
+                    <option value="">Выберите эпоху</option>
+                    <option>Древний мир</option>
+                    <option>Средневековье</option>
+                    <option>Эпоха Возрождения</option>
+                    <option>Новое время</option>
+                </select>
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="civilization">Любимая цивилизация *</label>
+                <select id="civilization" required>
+                    <option value="">Выберите цивилизацию</option>
+                    <option>Древний Египет</option>
+                    <option>Древний Рим</option>
+                    <option>Древняя Греция</option>
+                    <option>Майя</option>
+                    <option>Шумеры</option>
+                    <option>Инки</option>
+                </select>
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group full-width">
+                <label>Какая историческая загадка интересует больше всего? *</label>
+
+                <label class="radio-label">
+                    <input type="radio" name="mystery" value="Атлантида" required>
+                    Атлантида
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" name="mystery" value="Египетские пирамиды">
+                    Египетские пирамиды
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" name="mystery" value="Исчезновение цивилизаций">
+                    Исчезновение цивилизаций
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" name="mystery" value="Древние артефакты">
+                    Древние артефакты
+                </label>
+
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="about">Почему тебе интересна история?</label>
+                <textarea id="about" rows="4" placeholder="Напиши несколько предложений..."></textarea>
+            </div>
+        </div>
+
+        <button type="submit" class="main-button">Отправить анкету</button>
+    </form>
+
+    <div id="success" class="success-card" hidden>
+        <h2>Анкета успешно отправлена!</h2>
+        <p>Спасибо за интерес к истории. Добро пожаловать в MYSTERY HISTORY!</p>
+        <div id="userInfo"></div>
+        <a href="index.html" class="main-button">На главную</a>
+    </div>
+</main>
+
+<footer class="footer">
+    <p>© 2026 MYSTERY HISTORY</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
